@@ -1,0 +1,30 @@
+import java.util.Scanner;
+//import java.text.DecimalFormat;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+		//DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+		int n, op, s;
+        System.out.println("Tabuada");
+        System.out.print("digite um número e lhe daremos a sua tabuada: ");
+        n = scan.nextInt();
+        System.out.println("voce deseja calcular a tabuada do " + n + " em multiplicacao ou em soma?");
+        System.out.print("Digite [1] para multiplicacao e [2] para soma: ");
+        op = scan.nextInt();
+        switch(op){
+            case 1:
+                for(int i = 1; i <= 10; i++){
+                    System.out.println(n + " x " + i + " = " + i * n);
+                } 
+                break; 
+            case 2:
+                for(int i = 1; i <= 10; i++){
+                    s = i + n;
+                    System.out.println(n + " + " + i + " = " + s); 
+                } break;
+        }
+	}
+}
+/*
+Faça um programa para imprimir uma tabuada de soma e multiplicação.
+*/

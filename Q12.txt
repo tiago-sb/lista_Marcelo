@@ -1,0 +1,118 @@
+import java.util.Scanner;
+public class Main {
+    public static void titulo(){
+        System.out.println("=============================");
+	    System.out.println("         PROGRAMA 12         ");
+	    System.out.println("=============================");       
+    }
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    int op;
+        titulo();
+	    System.out.println("Opcao 1: Aprender...........: ");
+	    System.out.println("Opcao 2: Escrever...........: ");
+	    System.out.println("Opcao 3: Falar..............: ");
+	    System.out.println("Opcao 4: Sair...............: ");
+	    System.out.println("=============================");
+	    System.out.print("Escolha a opcao que desejas: ");
+	    op = scan.nextInt();
+	    switch (op){
+	        case 1:
+	            int op1;
+	            titulo();
+	            System.out.println("Menu Aprender: "); 
+    	        System.out.println("|--------------------------------------------------------------------------------| ");
+                System.out.println("|    SEGUNDA    |     TERÇA     |     QUARTA    |      QUINTA     |     SEXTA    | ");
+                System.out.println("|--------------------------------------------------------------------------------| ");
+                System.out.println("| Ativ. Interd. | Eng. de Soft. |      --       | Banco de Dados  | UI/UX Design | ");
+                System.out.println("| Ativ. Interd. | Eng. de Soft. | Prog. Web Co. | Banco de Dados  | UI/UX Design | ");
+                System.out.println("|      --       |      POO      | Prog. Web Co. | Estr. de Dados  | UI/UX Design | ");
+                System.out.println("|      --       |      POO      | Prog. Web Co. | Estr. de Dados  |      --      | ");
+                System.out.println("|--------------------------------------------------------------------------------| ");
+                System.out.println("Escolha o dia que desejas: ");
+                System.out.println("[1 - segunda]..:");
+                System.out.println("[2 - terca]....:");
+                System.out.println("[3 - querta]...:");
+                System.out.println("[4 - quinta]...:");
+                System.out.println("[5 - sexta]....:");
+                System.out.println("[6 - sair].....:");
+                System.out.print(": ");
+                op1 = scan.nextInt();
+                switch (op1){
+                    case 1:
+                        titulo();
+                        System.out.println("Bem-Vindo(a) ao menu de Segunda: ");
+                        System.out.println("Aqui aprenderemos sobre Atividades Interdisciplinares! "); break;
+                    case 2:
+                        titulo();
+                        System.out.println("Bem-Vindo(a) ao menu de Terca: ");
+                        System.out.println("Aqui aprenderemos sobre Engenharia de software e POO! "); break;
+                    case 3:
+                        titulo();
+                        System.out.println("Bem-Vindo(a) ao menu de Quarta: ");
+                        System.out.println("Aqui aprenderemos sobre Programacao Web! "); break;
+                    case 4:
+                        titulo();
+                        System.out.println("Bem-Vindo(a) ao menu de Quinta: ");
+                        System.out.println("Aqui aprenderemos sobre Banco de dados e Estrutura de dados! "); break;
+                    case 5:
+                        titulo();
+                        System.out.println("Bem-Vindo(a) ao menu de Sexta: ");
+                        System.out.println("Aqui aprenderemos sobre Ui/Ux! "); break;
+                    case 6:
+                        titulo();
+                        System.out.println("Saindo.... "); break;
+                }
+                    break;
+	        case 2:
+	            int op2 = 2;
+	            titulo();
+	            System.out.println("Menu Escrever: "); 
+	            System.out.println("Abrindo bloco de notas.: ");
+	            System.out.println("Bloco de notas abaixo: "); 
+	            while(op2 == 2){
+	                System.out.println("------------------------------");
+    	            System.out.println("|                            |");
+    	            System.out.println("|                            |");
+    	            System.out.println("|                            |");
+    	            System.out.println("|                            |");
+    	            System.out.println("|                            |");
+    	            System.out.println("|                            |");
+    	            System.out.println("------------------------------");
+    	            System.out.print("Deseja sair? 1 - sim  2 - nao");
+    	            System.out.println(": ");
+    	            op2 = scan.nextInt(); 
+    	            if(op2 == 1){
+    	                System.out.println("Saindo...."); break;  
+    	            }
+	                    
+	            }
+	            break;
+	        case 3:
+	            int op3 = 2;
+	            titulo();
+                while (op3 == 2){
+                    System.out.println("Falar: ");
+    	            System.out.println("Abrindo Menu de voz: ");
+    	            System.out.println("Mic aberto.... ");
+    	            System.out.println("Deseja sair? 1 - sim  2 - nao;");
+    	            System.out.print(":");
+    	            op3 = scan.nextInt();
+    	            if(op3 == 1){
+    	                System.out.println("Saindo...."); break;
+    	            }
+                }
+	            break;
+	    }
+	}
+}
+/*
+Desenvolva um programa semelhante a um menu de opções que exiba as seguintes opções:
+1. Aprender
+2. Escrever
+3. Falar
+Solicite do usuário qual opção ele deseja e imprima o que o foi escolhido. A cada interação o programa
+vai perguntar se deseja sair. O programa só deve encerrar quando o usuário digitar S para a pergunta
+“Deseja encerrar o programa?”.
+*/
+

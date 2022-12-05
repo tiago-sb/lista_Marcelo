@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    int hT;
+	    float vHT, pD, sB, tD, sL;
+	    System.out.print("Digite a sua quantidade de horas trabalhadas: ");
+	    hT = scan.nextInt();
+	    System.out.print("Digite o valor de suas horas trabalhadas: ");
+	    vHT = scan.nextFloat();
+	    System.out.print("Digite o seu percentual de desconto: ");
+	    pD = scan.nextFloat();
+	    sB = vHT * hT;
+	    System.out.println("Seu salário bruto é: " + sB + "R$");
+	    tD = ((pD / 100) / sB);
+	    System.out.println("Seu total de desconto é de: " + tD + "%");
+	    sL = sB - tD;
+	    System.out.println("Seu salário líquido é de: " + sL + "R$");
+	}
+}
+/*
+Solicite ao usuário 3 valores: horas trabalhadas, valor da hora trabalhada e percentual de desconto. O
+algoritmo deve calcular o salário bruto ( horas trabalhadas * valor da hora ) imprimindo-o na tela,
+calcular o total de desconto  imprimindo-o na tela, e o
+salário líquido ( salário bruto - total de desconto) imprimindo-o na tela.
+*/

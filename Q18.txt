@@ -1,0 +1,75 @@
+// Q18.
+public class Main{
+    public static class Proprietario {
+        private String nome;
+        private String cpf;
+        private String rg;
+        private String dataDeNascimento;
+        private String rua;
+        private String bairro;
+        private String cidade;
+        private String estado;
+        //Encapsulamento
+        public String getNome(){
+            return this.nome;
+        }
+        public void setNome(String nome){
+            this.nome = nome;
+        }
+         public String getCpf(){
+            return this.cpf;
+        }
+        public void setCpf(String cpf){
+            this.cpf = cpf;
+        } 
+        public String getRg(){
+            return this.rg;
+        }
+        public void setRg(String Rg){
+            this.rg = Rg;
+        }
+        public String getDataDeNascimento(){
+            return this.dataDeNascimento;
+        }
+        public void setDataDeNascimento(String DataDeNascimento){
+            this.dataDeNascimento = DataDeNascimento;
+        }
+        public String getRua(){
+            return this.rua;
+        }
+        public void setRua(String rua){
+            this.rua = rua;
+        }
+        public String getBairro(){
+            return this.bairro;
+        }
+        public void setBairro(String bairro){
+            this.bairro = bairro;
+        }
+        public String getCidade(){
+            return this.cidade;
+        }
+        public void setCidade(String cidade){
+            this.cidade = cidade;
+        }
+        public String getEstado(){
+            return this.estado;
+        }
+        public void setEstado(String estado){
+            this.estado = estado;
+        }
+        //Construtor
+        public Proprietario (String nome, String cpf, String rg){
+            this.nome = nome;
+            this.cpf = cpf;
+            this.rg = rg;    
+        }
+    }
+    public static void main(String[] args) {
+    }
+}
+/*
+Implemente uma classe Proprietário e declare os seguintes atributos na classe: nome, CPF, RG, data de
+nascimento, rua, bairro, cidade e estado. Faça o encapsulamento dos atributos da classe Proprietário.
+Os atributos nome, cpf e rg são obrigatórios (crie um construtor com esses parâmetros).
+*/

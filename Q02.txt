@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int i, j;
+		System.out.print("Digite um número: ");
+		i = scan.nextInt();
+		System.out.print("Digite outro número: ");
+		j = scan.nextInt();
+		if(i == j){
+		    System.out.print("Os números são iguais!");
+		}else if(i > j){
+		    System.out.println("Os números são diferentes! ");
+		    System.out.println("E o número " + i + " é maior que o " + j);
+		}else if(i < j){
+		    System.out.println("Os números são diferentes! ");
+		    System.out.print("E o número " + i + " é menor que o " + j);
+		}
+	}
+}
+/*
+Escreva um programa que leia dois números inteiros e mostre se os números são: iguais, não iguais,
+maior, menor, maior ou igual, menor ou igual.
+*/

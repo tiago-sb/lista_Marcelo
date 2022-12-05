@@ -1,0 +1,51 @@
+import java.util.Scanner;
+//import java.text.DecimalFormat;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+		//DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+		int op;
+		float f, k, c;
+		System.out.println("programa de calculo de temperatura");
+		System.out.println("programa de calculo de temperatura");
+		System.out.println("Opcao 1: C° -> F°....: ");
+		System.out.println("Opcao 2: C° -> K°....: ");		
+		System.out.println("Opcao 3: F° -> C°....: ");
+		System.out.println("Opcao 4: F° -> K°....: ");
+		System.out.println("Opcao 5: K° -> C°....: ");
+		System.out.println("Opcao 6: K° -> F°....: ");
+		System.out.print("Digite o número da conversao que voce deseja: ");
+		op = scan.nextInt();
+		switch(op){
+		    case 1:
+		        System.out.print("Digite a temperatura atual em Celsius: ");
+		        c = scan.nextFloat();
+		        System.out.print(c + " Graus em Farenheit: " + ((c * 1.8 ) + 32)); break;
+		    case 2:
+		        System.out.print("Digite a temperatura atual em Celsius: ");
+		        c = scan.nextFloat();
+		        System.out.print(c + " Graus em Kelvin: " + (c + 273.15)); break;
+		    case 3:
+		        System.out.print("Digite a temperatura atual em Farenheit: ");
+		        f = scan.nextFloat();
+		        System.out.print(f + " Farenheit em Celsius: " + ((f - 32) * 1.8)); break;
+		   case 4:
+		        System.out.print("Digite a temperatura atual em Farenheit: ");
+		        f = scan.nextFloat();
+		        System.out.print(f + " Farenheit em Kelvin: " + ((f + 459.67)/1.8)); break;
+		   case 5:
+		        System.out.print("Digite a temperatura atual em Kelvin: ");
+		        k = scan.nextFloat();
+		        System.out.print(k + " Kelvin em Celsius: " + (k - 273.15)); break;	
+		   case 6:
+		        System.out.print("Digite a temperatura atual em Kelvin: ");
+		        k = scan.nextFloat();
+		        System.out.print(k + " Kelvin em Farenheit: " + (((k - 273.15)*1.8) + 32)); break;			       
+		}
+	}
+}
+/*
+Defina um algoritmo que transforme um valor de temperatura fornecido pelo usuário, de Farenheit ( oF
+) para Celcius ( oC ), ou Celcius para Farenheit, de acordo com uma opção fornecida pelo usuário.
+Fórmula: [C = 5(F – 32)/9].
+*/

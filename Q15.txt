@@ -1,0 +1,84 @@
+/*
+classes em um único arquivo pois o computador deu problema
+e a atividade teve que ser feita em um compilador online
+*/
+import java.util.Scanner;
+public class Main {
+	public static class Emprestimo {
+	    public String emp(){
+	        return "emprestado!";
+	    }    
+	} 
+	public static class Livro { 
+	    Scanner scan = new Scanner(System.in);
+	    public int opc(){
+	        int op;
+    	    System.out.println("Biblioteca: ");
+    	    System.out.println("livros disponíveis: ");
+    	    System.out.println("Op1 -> POO............: ");
+    	    System.out.println("Op2 -> PWO............: ");
+    	    System.out.println("Op3 -> Estruturas de Dados.: ");
+    	    System.out.print("Faca a escolha: ");
+    	    op = scan.nextInt();
+    	    return op;
+	    }
+	}
+	public static class Pessoa {
+	    Scanner scan = new Scanner(System.in);
+	    public String dados(){
+	        String nome;
+	        System.out.print("Antes de confirmar, digite seu nome: ");
+	        nome = scan.nextLine();  
+	        return nome;
+	    } 
+	}
+	public static void main(String[] args) {
+	    Emprestimo empr = new Emprestimo();
+	    Pessoa pes = new Pessoa();
+	    Scanner scan = new Scanner(System.in);
+	    Livro liv = new Livro();
+	    switch (liv.opc()){
+	        case 1:
+	            int op1;
+	            System.out.println("Livro escolhido: POO" );
+	            System.out.print("Deseja pegar o livro emprestado? 1 - sim  2 - nao : ");
+	            op1 = scan.nextInt();
+	            if(op1 == 1){
+	                System.out.println("ok! " + pes.dados());
+	                System.out.println(empr.emp());    
+	            } else {
+	                System.out.println("Não emprestado!"); break;
+	            }
+	            
+	            break;
+	        case 2:
+	            int op2;
+	            System.out.println("Livro escolhido: PWO" );
+	            System.out.print("Deseja pegar o livro emprestado? 1 - sim  2 - nao : ");
+	            op2 = scan.nextInt();
+	            if(op2 == 1){
+	                System.out.println("ok! " + pes.dados());
+	                System.out.println(empr.emp());    
+	            } else {
+	                System.out.println("Não emprestado!"); break;
+	            }
+	            break;	
+	        case 3:
+	            int op3;
+	            System.out.println("Livro escolhido: Estrutura de Dados" );
+	            System.out.print("Deseja pegar o livro emprestado? 1 - sim  2 - nao : ");
+	            op3 = scan.nextInt();
+	            if(op3 == 1){
+	                System.out.println("ok! " + pes.dados());
+	                System.out.println(empr.emp());    
+	            } else {
+	                System.out.println("Não emprestado!"); break;
+	            }
+	            System.out.println("");
+	            break;
+	    }
+	}
+}
+/*
+Desenvolva um programa para empréstimo de livros, com as classes Empréstimo, Livro e Pessoa.
+*/

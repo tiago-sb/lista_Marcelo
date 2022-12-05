@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+		float t, vm, d, qtL;
+		System.out.println("====================================");
+		System.out.println(" PROGRAMA CALCULADOR DE COMBUSTÍVEL ");
+		System.out.println("====================================");
+		System.out.print("Digite o tempo gasto na viagem em horas [H]: ");
+		t = scan.nextFloat();
+		System.out.print("Digite a velocidade media durante a corrida em kilometros [KM/H]: ");
+		vm = scan.nextFloat();
+		d = t * vm;
+		qtL = d / 12;
+		System.out.print("Nesta viagem voce gastou " + decimalFormat.format(qtL) + " litros de combustível");
+	}
+}
+/*
+Solicite ao usuário 3 valores: horas trabalhadas, valor da hora trabalhada e percentual de desconto. O
+algoritmo deve calcular o salário bruto ( horas trabalhadas * valor da hora ) imprimindo-o na tela,
+calcular o total de desconto  imprimindo-o na tela, e o
+salário líquido ( salário bruto - total de desconto) imprimindo-o na tela.
+*/
+

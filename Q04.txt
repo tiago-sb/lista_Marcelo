@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		float vet[] = new float[4];
+		float aux;
+	    System.out.println("===========================");
+	    System.out.println("       ORDERNA VETOR       ");
+	    System.out.println("===========================");
+	    for(int i = 0; i < 4; i++){
+	    System.out.print("Digite o " + (i + 1) + "o. número: ");
+	    vet[i] = scan.nextFloat();
+	    }
+	    for(int i = 0; i < 3; i++){
+	        for(int j = i + 1; j < 4; j++){
+	            if(vet[i] > vet[j]){
+	                aux = vet[i];
+	                vet[i] = vet[j];
+	                vet[j] = aux;
+	            }
+	        }
+	    }
+	    for(int i = 0; i < 4; i++){
+	        System.out.print(vet[i] + " ");
+	    }
+    }
+}
+/*
+Faça um programa que solicite ao usuário 4 números em ordem aleatória e os imprima em ordem
+crescente.
+*/

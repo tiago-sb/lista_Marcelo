@@ -1,0 +1,120 @@
+// Q19.
+public class Main{
+    public static class Carro {
+        private String modelo, marca, chassi, proprietario, cor, cambioAutomatico;
+        private int ano, numDePortas, kilometros = 1;
+        private float velocidadeMaxima, velocidadeAtual, volumeDeCombustivel;
+        private boolean tetoSolar;
+
+        public String getModelo(){
+            return this.modelo;
+        }
+        public void setModelo(String modelo){
+            this.modelo = modelo;
+        }    
+        public String getMarca(){
+            return this.marca;
+        }
+        public void setMarca(String marca){
+            this.marca = marca;
+        }
+        public String getChassi(){
+            return this.chassi;
+        }
+        public void setChassi(String chassi){
+            this.chassi = chassi;
+        }
+        public String getProprietario(){
+            return this.proprietario;
+        }
+        public void setProprietario(String proprietario){
+            this.proprietario = proprietario;
+        }
+        public String getCor(){
+            return this.cor;
+        }
+        public void setCor(String cor){
+            this.cor = cor;
+        }
+        public String getCambioAutomatico(){
+            return this.cambioAutomatico;
+        }
+        public void setCambioAutomatico(String cambioAutomatico){
+            this.cambioAutomatico = cambioAutomatico;
+        }
+        public int getAno(){
+            return this.ano;
+        }
+        public void setAno(int ano){
+            this.ano = ano;
+        }
+        public int getNumDePortas(){
+            return this.numDePortas;
+        }
+        public void setNumDePortas(int numDePortas){
+            this.numDePortas = numDePortas;
+        }
+        public float getVelocidadeMaxima(){
+            return this.velocidadeMaxima;
+        }
+        public void setVelocidadeMaxima(float velocidadeMaxima){
+            this.velocidadeMaxima = velocidadeMaxima;
+        }
+        public float getVelocidadeAtual(){
+            return this.velocidadeAtual;
+        }
+        public void setVelocidadeAtual(float velocidadeAtual){
+            this.velocidadeAtual = velocidadeAtual;
+        }
+        public float getVolumeDeCombustivel(){
+            return this.volumeDeCombustivel;
+        }
+        public void setVolumeDeCombustivel(float volumeDeCombustivel){
+            this.volumeDeCombustivel = volumeDeCombustivel;
+        }
+        public boolean getTetoSolar(){
+            return this.tetoSolar;
+        }
+        public void setTetoSolar(boolean tetoSolar){
+            this.tetoSolar = tetoSolar;
+        }
+        public int getKilometros(){
+            return this.kilometros;
+        }
+        public void setKilometros(int kilometros){
+            this.kilometros = kilometros;
+        }        
+        public static int aumentaVelocidade(int velocidadeAtual){
+            if(this.velocidadeAtual > kilometros){
+              this.velocidadeAtual++;
+              return velocidadeAtual;  
+            }
+        }
+    }
+    public static void main(String[] args) {
+    }
+}
+/*
+implemente uma classe Carro e declare os seguintes atributos na classe: modelo, cor, ano, marca,
+chassi, proprietário, velocidade máxima, velocidade atual, nr de portas, teto solar, nr marchas, câmbio
+automático, e volume de combustível. Faça o encapsulamento da classe Carro e seus atributos. A partir
+daí, desenvolva:
+a. o método acelera que aumenta a velocidade de 1 em 1 km/h;
+b. o método freia que para o carro – Velocidade = 0 km/h;
+c. o método troca marcha;
+d. o método reduz a marcha;
+e. altere a classe Proprietário para que o atributo endereço vire uma classe e encapsule os
+atributos da classe Endereço;
+f. o endereço do proprietário não pode ser vazio (altere no construtor para receber o endereço);
+g. todo veículo tem um proprietário obrigatoriamente (implemente um construtor de veículo
+passando o proprietário como parâmetro);
+h. a marcha ré não pode ser engatada se o a velocidade for superior a 0 KM/h;
+i. um método que calcule a autonomia de viagem do veículo com base no consumo médio
+passado como parâmetro;
+j. um método para exibir o volume de combustível
+k. transforme o atributo marca de um carro em uma classe Marca com nome, nrDeModelos, ano
+de lançamento e código identificador
+l. Instancie um objeto da classe Carro, Proprietário, Endereço, Marca e relacione os objetos
+utilizando os métodos ou construtores quando necessário.
+*/
+

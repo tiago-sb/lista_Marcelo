@@ -1,0 +1,56 @@
+// Q16.
+import java.util.Scanner;
+public class Main{
+    public static class Produto {
+        private String id;
+        private double preco;
+        private int numCodBarras;
+        
+        public String getId(){
+            return this.id;
+        }
+        public void setId(String id){
+            this.id = id;
+        }
+        public double getPreco(){
+            return this.preco;
+        }
+        public void setPreco(double preco){
+            this.preco = preco;
+        }
+        public int getNumCodBarras(){
+            return this.numCodBarras;
+        }
+        public void setNumCodBarras(int numCodBarras){
+            this.numCodBarras = numCodBarras;
+        }
+    }
+    public static class Pagamento {
+        int escoha, dinheiro, cheque, cartao;
+        Scanner scan = new Scanner(System.in);
+        public void escolha(int escolha, int dinheiro, int cheque, int cartao) {
+            System.out.print("Digite o numero da escolha de seu pagamento: ");
+            System.out.print("Op1 -> Dinheiro..: ");
+            System.out.print("Op2 -> Cheque....: ");
+            System.out.print("Op3 -> Cartao....: ");
+            System.out.print(": ");
+            escolha = scan.nextInt();
+            
+            if(escolha == dinheiro){
+                System.out.print("Ok! nos de o dinheiro");
+            } else if(escolha == cheque){
+                System.out.print("Ok!");
+            } else if(escolha == cartao){
+                System.out.print("Ok! insira o cartao");
+            }
+    }
+    }
+    public static void main(String[] args) {
+    }
+}
+/*
+Identifique as classes e implemente um programa para a seguinte especificação: “O supermercado
+vende diferentes tipos de produtos. Cada produto tem um preço e uma quantidade em estoque. Um
+pedido de um cliente é composto de itens, onde cada item especifica o produto que o cliente deseja e a
+respectiva quantidade. Esse pedido pode ser pago em dinheiro, cheque ou cartão.”
+*/

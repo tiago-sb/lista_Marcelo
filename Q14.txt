@@ -1,0 +1,77 @@
+import java.util.Scanner;
+    public class Computadores {
+        private String modelo;    
+        private int memoria;
+        private float armazenamento;
+        private String processador;
+        private String placaDeVideo;
+        Scanner scan = new Scanner(System.in);
+        public String getModelo(){
+            return this.modelo;
+        }
+        public void setModelo(String modelo){
+            this.modelo = modelo;
+        }
+        public int getMemoria(){
+            return this.memoria;
+        }
+        public void setMemoria(int memoria){
+            this.memoria = memoria;
+        } 
+        public float getArmazenamento(){
+            return this.armazenamento;
+        }
+        public void setArmazenamento(float armazenamento){
+            this.armazenamento = armazenamento;
+        }
+        public String getProcessador(){
+            return this.processador;
+        }
+        public void setProcessador(String processador){
+            this.processador = processador;
+        }
+        public String getPlacaDeVideo(){
+            return this.placaDeVideo;
+        }
+        public void setPlacaDeVideo(String placaDeVideo){
+            this.placaDeVideo = placaDeVideo;
+        }
+        public void cadastrarComputador(String modelo, int memoria, float armazenamento, String processador, String placaDeVideo){
+            System.out.print("Digite o modelo de seu computador: ");
+            modelo = scan.nextLine();
+            System.out.print("Digite o tamanho de memória do seu computador: ");
+            memoria = scan.nextInt();
+            System.out.print("Digite a capacidade de armazenamento de seu computador: ");
+            armazenamento = scan.nextInt();
+            System.out.print("Digite o processador de seu computador: ");
+            processador = scan.nextLine();
+            System.out.print("Digite a placa de vídeo de seu computador: ");
+            placaDeVideo = scan.nextLine();
+        }
+        public void removerComputador(String modelo){
+            int nModelo;
+            nModelo = Integer.parseInt(modelo);
+            nModelo = 0;
+        } 
+        public void upgrade(int memoria, float armazenamento, String processador, String placaDeVideo){
+            System.out.print("Digite a nova quantidade de memória de seu computador: ");
+            memoria = scan.nextInt();
+            System.out.print("Digite a nova quantidade de armazenamento de seu computador: ");
+            armazenamento = scan.nextFloat();
+            System.out.print("Digite o novo processador de seu computador: ");
+            processador = scan.nextLine();
+            System.out.print("Digite a nova placa de video de seu computador: ");
+            placaDeVideo = scan.nextLine();
+        }
+    }
+/*
+Desenvolva uma classe de Computadores com as seguintes características e métodos:
+a. Características: modelo, memória, armazenamento, processador e placa de vídeo
+b. Métodos:
+i. gets
+ii. sets
+iii. cadastrarComputador(modelo, memória, armazenamento, processador e vídeo)
+iv. removerComputador(modelo)
+v. upgrade(memória, armazenamento, processador, vídeo)
+*/
+

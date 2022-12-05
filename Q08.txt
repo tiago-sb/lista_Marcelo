@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+		DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+	    double r, v;
+	    System.out.print("digite o raio da esfera em cm e calcularemos seu volume: ");
+	    r = scan.nextFloat();
+	    v = (4 * 3.14 * Math.pow(r,3))/ 3;
+	    System.out.print("volume: " + decimalFormat.format(v) + "cm3");
+	}
+}
+/*
+Faça um programa que calcule o volume de uma esfera de raio R, fornecido pelo usuário. Observe que R
+não pode ser menor que 0 (zero). Fórmula: [ V = 4.π.R3/3 ].
+*/

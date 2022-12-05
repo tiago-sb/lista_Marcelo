@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+        int i;
+        System.out.print("Digite um número: ");
+        i = scan.nextInt();
+        if(i % 2 == 0){
+            System.out.print("O número " + i + " é par!");
+        } else {
+            System.out.print("O número " + i + " é impar! ");
+        }
+	}
+}
+/*
+Usando seus conhecimentos iniciais sobre a linguagem JAVA, desenvolva um algoritmo para verificar se
+um número é par ou ímpar. Solicite o número ao usuário.
+*/

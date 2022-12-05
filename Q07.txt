@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    double A, B, C, raiz1, raiz2, delta;
+	    System.out.println("Uma equacao do segundo grau possui a seguinte estrutura: ");
+	    System.out.println("                     Ax2 + Bx + C = 0                    ");
+	    System.out.println("digite abaixo os valores de 'A' 'B' e 'C' e encontre as raízes da equecao");
+	    System.out.print("digite o valor de 'A': ");
+	    A = scan.nextFloat();
+	    System.out.print("digite o valor de 'B': ");
+	    B = scan.nextFloat();
+	    System.out.print("digite o valor de 'C': ");
+	    C = scan.nextFloat();
+	    delta = Math.sqrt((B*B) - 4*A*C);
+	    if(delta < 0){
+	        System.out.print("nao existe raíz real para este caso, pois o delta é negativo!");
+	    }else if(delta >= 0){
+	        raiz1 = (-B - delta) / 2*A;
+	        raiz2 = (-B + delta) / 2*A;
+	        System.out.println("As raízes da equacao " + A +"X2 + " + B + "X + " + C + " = 0 ");
+	        System.out.println("Raíz 1 = " + raiz1);
+	        System.out.println("Raíz 2 = " + raiz2); 
+	    }
+	}
+}
+/*
+Crie um algoritmo que encontre as raízes de uma equação do tipo Ax2 + Bx + C, solicitando ao usuário o
+valor de A, B e C.
+*/
